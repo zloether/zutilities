@@ -16,8 +16,8 @@ import json
 # -----------------------------------------------------------------------------
 # functions
 # -----------------------------------------------------------------------------
-def jprint(list_or_dict):
-    print(json.dumps(list_or_dict, indent=2))
+def jprint(list_or_dict, indent=2):
+    print(json.dumps(list_or_dict, indent=indent))
 
 
 def read_json_file(json_file):
