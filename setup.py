@@ -6,7 +6,7 @@ def read(fname):
 
 setup(
     name = "zutilities",
-    version = "0.1.1a",
+    version = "0.1.2",
     author = "Zackary Loether",
     description = ("A collection of Python utilities"),
     license = "MIT",
