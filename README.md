@@ -21,7 +21,7 @@ python -m pip install zutilities
 
 ## Usage
 
-`zutilities.`**jprint**(list_or_dict, indent=2)
+`zutilities`.**jprint**(list_or_dict, indent=2)
 
 Prints a list or dictionary as formatted JSON.
 
@@ -36,14 +36,25 @@ Prints a list or dictionary as formatted JSON.
 ```
 
 
-`zutilities.`**read_json_file**(json_file)
+`zutilities`.**read_json_file**(json_file)
 
 Reads a JSON file from the filesystem and returns a list or dictionary.
 
 ```
-j = zutilities.read_json_file('file.json')
+>>> j = zutilities.read_json_file('file.json')
 >>> j
 [{'key1': 'value1', 'key2': 'value2'}]
+```
+
+
+`zutilities`.**get_logger**(log_level=20, format=default_log_format, streams=[sys.stdout])
+
+Returns a _logging.RootLogger_ object with preferred defaults set. The _default_log_format_ is '[%(asctime)s] {%(pathname)s:%(lineno)d} %(levelname)s - %(message)s'
+
+```
+>>> logr = zutilities.get_logger()
+>>> logr.info('Hello World')
+[2021-10-08 21:08:40,353] {<stdin>:1} INFO - Hello world
 ```
 
 
